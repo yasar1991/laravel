@@ -21,7 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1>Hi, New to Laravel From Venky!</h1>
         <h1>Started Working !</h1>
     </body>
 </html>
