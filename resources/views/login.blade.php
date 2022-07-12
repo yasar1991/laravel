@@ -13,12 +13,12 @@
                 </div>
 
                 <form>
-                  <p>Please login to your account</p>
+                  <p>Sign in to your account</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
                       placeholder="Phone number or email address" />
-                    <label class="form-label" for="form2Example11">Username</label>
+                    <label class="form-label" for="form2Example11">Email</label>
                   </div>
 
                   <div class="form-outline mb-4">
