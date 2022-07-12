@@ -13,7 +13,7 @@
                 </div>
 
                 <form>
-                  <p>Sign in to your account</p>
+                  <p>Account Login</p>
 
                   <div class="form-outline mb-4">
                     <input type="email" id="form2Example11" class="form-control"
