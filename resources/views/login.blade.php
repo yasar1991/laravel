@@ -9,7 +9,7 @@
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <h4 class="mt-1 mb-5 pb-1">Laravel Development</h4>
+                  <h4 class="mt-1 mb-5 pb-1">Laravel Framework Development</h4>
                 </div>
 
                 <form>
@@ -34,17 +34,20 @@
                   </div>
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
-                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <p class="mb-0 me-2">Create an account here?</p>
                     <button type="button" class="btn btn-outline-danger">Sign Up</button>
+                             
                   </div>
-
+                  <div class="d-flex align-items-center justify-content-center pb-1">
+                  <h5 class="justify-content-center align-items-center">Changes by Venky</h5>   
+                  </div>
                 </form>
-
+               
               </div>
             </div>
             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
               <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                <h4 class="mb-4">Laravel</h4>
+                <h4 class="mb-4"></h4>
                 <p class="small mb-0"></p>
               </div>
             </div>
