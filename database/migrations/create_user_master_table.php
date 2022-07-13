@@ -1,17 +1,20 @@
 <?php
 
-namespace App\Models;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Login extends Model
+return new class extends Migration
 {
-    use HasFactory;
-
-    public function up(){
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
         Schema::create('user_master', function (Blueprint $table) {
-            $table->id();
+           // $table->id();
             $table->increments('id');
             $table->string('firstname');
             $table->string('lastname');
@@ -19,15 +22,20 @@ class Login extends Model
             $table->text('password');
             $table->integer('role');
             $table->integer('created_by');
-            $table->dateTime('created_at', $precision = 0);
+           
             $table->integer('updated_by');
-            $table->dateTime('updated_at', $precision = 0);
+           
             $table->timestamps();
         });
     }
+   
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::dropIfExists('user_master');
     }
-
-}
+};

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,4 +20,6 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::post('/validate', [LoginController::class, 'validate_user'])->name('validate');
+
 

@@ -12,24 +12,24 @@
                   <h4 class="mt-1 mb-5 pb-1">Laravel Framework Development</h4>
                 </div>
 
-                <form>
+                <form id="login_f" name="login_f" action="/validate" method="POST">
+               {{ csrf_field(); }}
                   <p>Please login to your account</p>
-
+                  
                   <div class="form-outline mb-4">
-                    <input type="email" id="form2Example11" class="form-control"
-                      placeholder="Phone number or email address" />
+                    <input type="email" id="username" class="form-control"
+                      placeholder="Phone number or email address" name="username" />
                     <label class="form-label" for="form2Example11">Username</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="password" id="form2Example22" class="form-control" />
+                    <input type="password" id="password" class="form-control" name="password" />
                     <label class="form-label" for="form2Example22">Password</label>
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">
-                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">
-                        Log
-                      in</button>
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button" onclick="signin_validate()">
+                        Log in</button>
                     <a class="text-muted" href="#!">Forgot password?</a>
                   </div>
 
@@ -38,12 +38,7 @@
                     <button type="button" class="btn btn-outline-danger">Sign Up</button>
                              
                   </div>
-                  <div class="d-flex align-items-center justify-content-center pb-1">
-                  <h5 class="justify-content-center align-items-center">Changes by Venky</h5>   
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center pb-1">
-                  <h5 class="justify-content-center align-items-center">Changes by Yasar</h5>   
-                  </div>
+                
                 </form>
                
               </div>
